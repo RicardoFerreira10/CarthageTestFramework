@@ -24,7 +24,16 @@ If you want to user our Framework make sure you follow the next steps:
     ```
 1. A **Cartfile.resolved** file and a **Carthage** directory will be created in the same directory where your .xcodeproj or .xcworkspace is
 
-1. Drag the built .framework binaries from Carthage/Build/<platform> into your application’s Xcode project.
-
-
-
+1. Drag the built .framework binaries from Carthage/Build/<platform> into your application’s Xcode project, or simple run the command:
+    ```
+    cp -R Carthage/Build/iOS/CarthageTestFramework.framework .
+    ```
+    
+## Troubleshooting
+-----
+While running the app, if the following erro occurs:
+```
+dyld: Library not loaded: @rpath/CarthageTestFramework.framework/CarthageTestFramework
+  Referenced from: <APP_PATH>/<NAME_OF_THE_APP>.app/<NAME_OF_THE_APP>
+  Reason: image not found
+```
