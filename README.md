@@ -17,6 +17,7 @@ If you want to user our Framework make sure you follow the next steps:
         ```
         github "RicardoFerreira10/CarthageTestFramework" == 1.0
         ```
+     1. save and close the Cartfile file
 1. Run 
     ```
     carthage update
