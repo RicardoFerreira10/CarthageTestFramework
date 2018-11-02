@@ -17,10 +17,6 @@ If you want to user our Framework make sure you follow the next steps:
         ```
         github "CarthageTestFramework/CarthageTestFramework" == 1.0
         ```
-        or 
-        ```
-        git "https://git.codavel.com:bolina/carthage-test-framework.git" == 1.0
-        ```
 1. Run 
     ```
     carthage update
