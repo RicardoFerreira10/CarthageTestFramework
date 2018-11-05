@@ -29,11 +29,20 @@ If you want to user our Framework make sure you follow the next steps:
     cp -R Carthage/Build/iOS/CarthageTestFramework.framework .
     ```
     
+    
 ## Troubleshooting
 -----
-While running the app, if the following erro occurs:
 ```
 dyld: Library not loaded: @rpath/CarthageTestFramework.framework/CarthageTestFramework
-  Referenced from: <APP_PATH>/<NAME_OF_THE_APP>.app/<NAME_OF_THE_APP>
+  Referenced from: /Users/ricardoferreira/Library/Developer/CoreSimulator/Devices/1D3BEBB9-79D9-47E6-920B-C74377E7EAA1/data/Containers/Bundle/Application/FB262C5C-C677-4E39-BFC3-216A0CAAF57C/TestApp.app/TestApp
   Reason: image not found
 ```
+
+Carthage build
+```
+
+Could not find any available simulators for iOS
+```
+
+Make sure you have, at least, the version 0.31.2 
+
