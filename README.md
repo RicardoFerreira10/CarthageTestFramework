@@ -21,7 +21,6 @@ If you want to user our Framework make sure you follow the next steps:
 1. Build 
     ```
     carthage update
-    carthage build --platform iOS
     ```
 1. A **Cartfile.resolved** file and a **Carthage** directory will be created in the same directory where your .xcodeproj or .xcworkspace is
 
