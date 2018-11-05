@@ -18,9 +18,10 @@ If you want to user our Framework make sure you follow the next steps:
         github "RicardoFerreira10/CarthageTestFramework" >= 1.1
         ```
      1. save and close the Cartfile file
-1. Run 
+1. Build 
     ```
     carthage update
+    carthage build --platform iOS
     ```
 1. A **Cartfile.resolved** file and a **Carthage** directory will be created in the same directory where your .xcodeproj or .xcworkspace is
 
@@ -28,21 +29,26 @@ If you want to user our Framework make sure you follow the next steps:
     ```
     cp -R Carthage/Build/iOS/CarthageTestFramework.framework .
     ```
-    
+1. 
+1. 
     
 ## Troubleshooting
 -----
-```
-dyld: Library not loaded: @rpath/CarthageTestFramework.framework/CarthageTestFramework
-  Referenced from: /Users/ricardoferreira/Library/Developer/CoreSimulator/Devices/1D3BEBB9-79D9-47E6-920B-C74377E7EAA1/data/Containers/Bundle/Application/FB262C5C-C677-4E39-BFC3-216A0CAAF57C/TestApp.app/TestApp
-  Reason: image not found
-```
 
-Carthage build
-```
+### Carthage build
 
+```
 Could not find any available simulators for iOS
 ```
 
 Make sure you have, at least, the version 0.31.2 
+
+### Linking the Library
+
+```
+dyld: Library not loaded: @rpath/CarthageTestFramework.framework/CarthageTestFramework
+  Referenced from: <APP_PATH>/<APP_NAME>.app/<APP_NAME>
+  Reason: image not found
+```
+
 
