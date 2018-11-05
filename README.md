@@ -1,6 +1,6 @@
 # Carthage Test Framework
 
-Simple Framework with Objective c/c++ and c++ classes
+Simple Dummy Framework with Objective C/C++ and C++ classes, to be used as a Carthage Framework inside any iOS Application.
 
 Requirements:
 - Xcode 10 (https://developer.apple.com/xcode/)
@@ -37,18 +37,24 @@ If you want to user our Framework make sure you follow the next steps:
 
 ### Carthage build
 
+While running the Carthage build script, if the message below appears, that means that you have a Carthage version that is not compatible with the newest Xcode version (10.0).
 ```
 Could not find any available simulators for iOS
 ```
-
-Make sure you have, at least, the version 0.31.2 
+In order to solve the issue, make sure that you have, at least, the **0.31.2** version Carthage.
 
 ### Linking the Library
-
+After linking the library with you app, run it. During that process, if the error below appears make sure you have linked the framework properly.
 ```
 dyld: Library not loaded: @rpath/CarthageTestFramework.framework/CarthageTestFramework
   Referenced from: <APP_PATH>/<APP_NAME>.app/<APP_NAME>
   Reason: image not found
 ```
+To fix this, just follow the next steps:
+    1. Inside the Xcode, select the project,
+    1. Select the app target, inside the Target section,
+    1. In the General tab, scroll down to the Embedded Binaries section,
+    1. If the Embedded Binaries is empty, you can easily add the Framework by clicking the plus (+) button,
+    1. Select the Framework and finally press the add button. This step will also add the Framework to the Linked Frameworks and Libraries section. 
 
 
