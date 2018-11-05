@@ -15,7 +15,7 @@ If you want to user our Framework make sure you follow the next steps:
     1. nano Cartfile
     1. add the following code
         ```
-        github "RicardoFerreira10/CarthageTestFramework" >= 1.1
+        github "RicardoFerreira10/CarthageTestFramework" >= 1.3
         ```
      1. save and close the Cartfile file
 1. Build 
