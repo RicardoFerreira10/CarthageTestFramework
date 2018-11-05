@@ -54,5 +54,6 @@ To fix this, just follow the next steps:
 1. Inside the Xcode, select the project,
 1. Select the app target, inside the Target section,
 1. In the General tab, scroll down to the Embedded Binaries section,
-1. If the Embedded Binaries is empty, you can easily add the Framework by clicking the plus (+) button,
+1. If the Embedded Binaries is empty, that means that the Framework is not linked properly. So you can easily add it by clicking the plus (+) button,
 1. Select the Framework and finally press the add button. This step will also add the Framework to the Linked Frameworks and Libraries section. 
+1. Build and then Run the Application
