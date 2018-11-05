@@ -7,7 +7,7 @@ Requirements:
 - Brew (https://brew.sh/)
 - Carthage (https://github.com/Carthage/Carthage)
 
-## Install
+## Build
 
 If you want to user our Framework make sure you follow the next steps:
 1. Install [Carthage](https://github.com/Carthage/Carthage#installing-carthage) 
@@ -29,8 +29,16 @@ If you want to user our Framework make sure you follow the next steps:
     ```
     cp -R Carthage/Build/iOS/CarthageTestFramework.framework .
     ```
-1. 
-1. 
+1. Finally, inside the app Target section, select the Build Phases tab and add the Framework to the Link Binary With Libraries.
+
+We are all set, so simply build and then run the app.
+
+## Upgrading
+
+If you’ve modified your Cartfile, or you want to update to the newest versions of each framework (subject to the requirements you’ve specified), simply run the carthage update command:
+    ```
+    carthage update
+    ```
     
 ## Troubleshooting
 -----
